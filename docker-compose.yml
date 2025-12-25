@@ -1,0 +1,8 @@
+services:
+  app:
+    image: django-docker-image
+    container_name: django-docker-container
+    ports:
+      - "8001:8000"
+    volumes:
+      - .:/app
